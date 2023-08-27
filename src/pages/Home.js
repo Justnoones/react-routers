@@ -17,7 +17,7 @@ function Home () {
         <div key={blog.id} className="card">
           <h3>{blog.title}</h3>
           <p>Poseted By - {blog.author}</p>
-          <Link to={`/Blogs/${blog.slug}`}>Read More...</Link>
+          <Link to={`/blogs/${blog.id}`}>Read More...</Link>
         </div>
       ))}
     </div>
