@@ -1,8 +1,25 @@
+import "./Home.css";
+import { useState } from "react";
+import useFetch from '../hooks/useFetch';
+import { Link } from "react-router-dom";
+
+
 function Home () {
+
+  let url = "http://localhost:3001/Blogs"
+  let { data : blogs , loading, error } = useFetch(url);
+
   return (
-    <div>
-      <h1>Home</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div className="Home">
+      {error && <div>error</div>}
+      {loading && <div>loading</div>}
+      {blogs && blogs.map(blog => (
+        <div key={blog.id} className="card">
+          <h3>{blog.title}</h3>
+          <p>Poseted By - {blog.author}</p>
+          <Link to={`/Blogs/${blog.slug}`}>Read More...</Link>
+        </div>
+      ))}
     </div>
   );
 }

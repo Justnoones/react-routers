@@ -1,0 +1,25 @@
+{
+    "Blogs" : [
+        {
+            "id" : 1,
+            "title" : "What's Laravel",
+            "slug" : "what-is-laravel",
+            "author" : "Hlaing Min Than",
+            "body" : "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things."
+        },
+        {
+            "id" : 2,
+            "title" : "What's React",
+            "slug" : "what-is-react",
+            "author" : "Hlaing Min Than",
+            "body" : "Today, front-end frameworks and libraries are becoming an essential part of the modern web development stack. React.js is a front-end library that has gradually become the go-to framework for modern web development within the JavaScript community.Today, front-end frameworks and libraries are becoming an essential part of the modern web development stack. React.js is a front-end library that has gradually become the go-to framework for modern web development within the JavaScript community."
+        },
+        {
+            "id" : 3,
+            "title" : "What's Vue",
+            "slug" : "what-is-vue",
+            "author" : "Hlaing Min Than",
+            "body" : "Perhaps you've heard of Vuex and you're wondering what it is. What does it do? Why does it exist? How do I use it? If these questions are on your mind you've come to the right place! In this series of articles, we'll take a look at Vuex, the official Vue.js store solution, as well as some alternatives that can serve the same purpose but with different approaches. By the end of the series you should have a good grasp on Vuex and other Vue.js store solutions and be well prepared to implement the store solution best suited for your project and coding style."
+        }
+    ]
+}
