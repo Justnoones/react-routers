@@ -1,4 +1,5 @@
 import './App.css';
+import { Outlet, NavLink } from 'react-router-dom';
 
 function App() {
   return (
@@ -6,10 +7,12 @@ function App() {
       <nav>
         <h1>My Blogs</h1>
         <ul>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Abpit</a></li>
+          <li><NavLink to='/'>Home</NavLink></li>
+          <li><NavLink to='/About'>About</NavLink></li>
+          <li><NavLink to='/Content'>Content</NavLink></li>
         </ul>
       </nav>
+      <Outlet />
     </div>
   );
 }
